@@ -91,7 +91,7 @@ JAR_JVM_OPTS = shlex.split(os.getenv('STORM_JAR_JVM_OPTS', ''))
 JAVA_HOME = os.getenv('JAVA_HOME', None)
 JAVA_CMD = 'java' if not JAVA_HOME else os.path.join(JAVA_HOME, 'bin', 'java')
 if JAVA_HOME and not os.path.exists(JAVA_CMD):
-    print "ERROR:  JAVA_HOME is invalid.  Could not find bin/java at %s." % JAVA_HOME
+    print "ERROR:  JAVA_HOME is invalid.  Could not find bin/java at {0!s}.".format(JAVA_HOME)
     sys.exit(1)
 STORM_EXT_CLASSPATH = os.getenv('STORM_EXT_CLASSPATH', None)
 STORM_EXT_CLASSPATH_DAEMON = os.getenv('STORM_EXT_CLASSPATH_DAEMON', None)
@@ -483,7 +483,7 @@ def kill_workers(*args):
 
 def shell(resourcesdir, command, *args):
     tmpjarpath = "stormshell" + str(random.randint(0, 10000000)) + ".jar"
-    os.system("jar cf %s %s" % (tmpjarpath, resourcesdir))
+    os.system("jar cf {0!s} {1!s}".format(tmpjarpath, resourcesdir))
     runnerargs = [tmpjarpath, command]
     runnerargs.extend(args)
     exec_storm_class(
@@ -706,14 +706,14 @@ def print_usage(command=None):
     if command != None:
         if command in COMMANDS:
             print(COMMANDS[command].__doc__ or
-                  "No documentation provided for <%s>" % command)
+                  "No documentation provided for <{0!s}>".format(command))
         else:
-           print("<%s> is not a valid command" % command)
+           print("<{0!s}> is not a valid command".format(command))
     else:
         print_commands()
 
 def unknown_command(*args):
-    print("Unknown command: [storm %s]" % ' '.join(sys.argv[1:]))
+    print("Unknown command: [storm {0!s}]".format(' '.join(sys.argv[1:])))
     print_usage()
     sys.exit(254)
 

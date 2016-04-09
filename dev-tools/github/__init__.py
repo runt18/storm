@@ -104,7 +104,7 @@ class GitHub:
         self.headers = {}
         if options.gituser:
             gitpassword = getpass.getpass("github.com user " + options.gituser + ":")
-            authstr = base64.encodestring('%s:%s' % (options.gituser, gitpassword)).replace('\n', '')
+            authstr = base64.encodestring('{0!s}:{1!s}'.format(options.gituser, gitpassword)).replace('\n', '')
             self.headers["Authorization"] = "Basic " + authstr
 
     def pulls(self, user, repo, type="all"):
