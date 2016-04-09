@@ -192,7 +192,13 @@ def parse_args(string):
     args = [re.compile(r"'((?:[^'\\]|\\.)*)'").sub('\\1', x) for x in args]
     return [re.compile(r'\\(.)').sub('\\1', x) for x in args]
 
-def exec_storm_class(klass, jvmtype="-server", jvmopts=[], extrajars=[], args=[], fork=False, daemon=True, daemonName=""):
+def exec_storm_class(klass, jvmtype="-server", jvmopts=None, extrajars=None, args=None, fork=False, daemon=True, daemonName=""):
+    if jvmopts is None:
+        jvmopts = []
+    if extrajars is None:
+        extrajars = []
+    if args is None:
+        args = []
     global CONFFILE
     storm_log_dir = confvalue("storm.log.dir",[CLUSTER_CONF_DIR])
     if(storm_log_dir == None or storm_log_dir == "null"):
