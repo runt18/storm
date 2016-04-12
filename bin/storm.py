@@ -70,7 +70,7 @@ STORM_DIR = os.sep.join(os.path.realpath( __file__ ).split(os.sep)[:-2])
 USER_CONF_DIR = os.path.expanduser("~" + os.sep + ".storm")
 STORM_CONF_DIR = os.getenv('STORM_CONF_DIR', None)
 
-if STORM_CONF_DIR == None:
+if STORM_CONF_DIR is None:
     CLUSTER_CONF_DIR = os.path.join(STORM_DIR, "conf")
 else:
     CLUSTER_CONF_DIR = STORM_CONF_DIR
@@ -126,10 +126,10 @@ def get_classpath(extrajars, daemon=True):
     ret.extend(get_jars_full(STORM_DIR + "/extlib"))
     if daemon:
         ret.extend(get_jars_full(STORM_DIR + "/extlib-daemon"))
-    if STORM_EXT_CLASSPATH != None:
+    if STORM_EXT_CLASSPATH is not None:
         for path in STORM_EXT_CLASSPATH.split(os.pathsep):
             ret.extend(get_jars_full(path))
-    if daemon and STORM_EXT_CLASSPATH_DAEMON != None:
+    if daemon and STORM_EXT_CLASSPATH_DAEMON is not None:
         for path in STORM_EXT_CLASSPATH_DAEMON.split(os.pathsep):
             ret.extend(get_jars_full(path))
     ret.extend(extrajars)
@@ -195,7 +195,7 @@ def parse_args(string):
 def exec_storm_class(klass, jvmtype="-server", jvmopts=[], extrajars=[], args=[], fork=False, daemon=True, daemonName=""):
     global CONFFILE
     storm_log_dir = confvalue("storm.log.dir",[CLUSTER_CONF_DIR])
-    if(storm_log_dir == None or storm_log_dir == "null"):
+    if(storm_log_dir is None or storm_log_dir == "null"):
         storm_log_dir = os.path.join(STORM_DIR, "logs")
     all_args = [
         JAVA_CMD, jvmtype,
@@ -231,7 +231,7 @@ def jar(jarfile, klass, *args):
     will upload the jar at topology-jar-path when the topology is submitted.
     """
     transform_class = confvalue("client.jartransformer.class", [CLUSTER_CONF_DIR])
-    if (transform_class != None and transform_class != "null"):
+    if (transform_class is not None and transform_class != "null"):
         tmpjar = os.path.join(tempfile.gettempdir(), uuid.uuid1().hex+".jar")
         exec_storm_class("org.apache.storm.daemon.ClientJarTransformerRunner", args=[transform_class, jarfile, tmpjar], fork=True, daemon=False)
         exec_storm_class(
@@ -506,7 +506,7 @@ def repl():
 def get_log4j2_conf_dir():
     cppaths = [CLUSTER_CONF_DIR]
     storm_log4j2_conf_dir = confvalue("storm.log4j2.conf.dir", cppaths)
-    if(storm_log4j2_conf_dir == None or storm_log4j2_conf_dir == "null"):
+    if(storm_log4j2_conf_dir is None or storm_log4j2_conf_dir == "null"):
         storm_log4j2_conf_dir = STORM_LOG4J2_CONF_DIR
     elif(not os.path.isabs(storm_log4j2_conf_dir)):
         storm_log4j2_conf_dir = os.path.join(STORM_DIR, storm_log4j2_conf_dir)
@@ -703,7 +703,7 @@ def print_commands():
 
 def print_usage(command=None):
     """Print one help message or list of available commands"""
-    if command != None:
+    if command is not None:
         if command in COMMANDS:
             print(COMMANDS[command].__doc__ or
                   "No documentation provided for <{0!s}>".format(command))

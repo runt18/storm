@@ -23,11 +23,11 @@ def print_detail_information(testcase, fail_or_error):
     print "classname: {0!s} / testname: {1!s}".format(testcase.get("classname"), testcase.get("name"))
     print fail_or_error.text
     stdout = testcase.find("system-out")
-    if stdout != None:
+    if stdout is not None:
         print "-" * 20, "system-out", "-"*20
         print stdout.text
     stderr = testcase.find("system-err")
-    if stderr != None:
+    if stderr is not None:
         print "-" * 20, "system-err", "-"*20
         print stderr.text
     print "-" * 50
