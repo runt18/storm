@@ -252,7 +252,7 @@ class JiraRepo:
         while (at < end):
             params = urllib.urlencode({'jql': query, 'startAt': at, 'maxResults': count})
             # print params
-            resp = urllib2.urlopen(self.baseUrl + "/search?%s" % params)
+            resp = urllib2.urlopen(self.baseUrl + "/search?{0!s}".format(params))
             data = json.loads(resp.read())
             if (data.has_key('errorMessages')):
                 raise Exception(data['errorMessages'])

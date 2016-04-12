@@ -20,7 +20,7 @@ from xml.etree.ElementTree import ElementTree
 
 def print_detail_information(testcase, fail_or_error):
     print "-" * 50
-    print "classname: %s / testname: %s" % (testcase.get("classname"), testcase.get("name"))
+    print "classname: {0!s} / testname: {1!s}".format(testcase.get("classname"), testcase.get("name"))
     print fail_or_error.text
     stdout = testcase.find("system-out")
     if stdout != None:
@@ -39,7 +39,7 @@ def print_error_reports_from_report_file(file_path):
         tree.parse(file_path)
     except:
         print "-" * 50
-        print "Error parsing %s"%file_path
+        print "Error parsing {0!s}".format(file_path)
         f = open(file_path, "r");
         print f.read();
         print "-" * 50
@@ -64,17 +64,17 @@ def main(report_dir_path):
     for test_report in glob.iglob(report_dir_path + '/*.xml'):
         file_path = os.path.abspath(test_report)
         try:
-            print "Checking %s" % test_report
+            print "Checking {0!s}".format(test_report)
             print_error_reports_from_report_file(file_path)
         except Exception, e:
-            print "Error while reading report file, %s" % file_path
-            print "Exception: %s" % e
+            print "Error while reading report file, {0!s}".format(file_path)
+            print "Exception: {0!s}".format(e)
             traceback.print_exc()
 
 
 if __name__ == "__main__":
     if sys.argv < 2:
-        print "Usage: %s [report dir path]" % sys.argv[0]
+        print "Usage: {0!s} [report dir path]".format(sys.argv[0])
         sys.exit(1)
 
     main(sys.argv[1])

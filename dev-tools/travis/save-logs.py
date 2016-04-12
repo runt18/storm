@@ -33,7 +33,7 @@ def main(file, cmd):
         count = count + 1
         if datetime.now() > nextPrint:
             diff = datetime.now() - start
-            sys.stdout.write("\r%d seconds %d log lines"%(diff.seconds, count))
+            sys.stdout.write("\r{0:d} seconds {1:d} log lines".format(diff.seconds, count))
             sys.stdout.flush()
             nextPrint = datetime.now() + timedelta(seconds=10)
         out.write(line)
@@ -41,14 +41,14 @@ def main(file, cmd):
     out.close()
     errcode = process.wait()
     diff = datetime.now() - start
-    sys.stdout.write("\r%d seconds %d log lines"%(diff.seconds, count))
+    sys.stdout.write("\r{0:d} seconds {1:d} log lines".format(diff.seconds, count))
     print
     print cmd, "done", errcode
     return errcode
 
 if __name__ == "__main__":
     if sys.argv < 1:
-        print "Usage: %s [file info]" % sys.argv[0]
+        print "Usage: {0!s} [file info]".format(sys.argv[0])
         sys.exit(1)
 
     sys.exit(main(sys.argv[1], sys.argv[2:]))

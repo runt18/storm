@@ -22,7 +22,7 @@ import os
 os.chdir("storm-core")
 
 ns = sys.argv[1]
-pipe = Popen(["mvn", "test", "-DfailIfNoTests=false", "-Dtest=%s"%ns])
+pipe = Popen(["mvn", "test", "-DfailIfNoTests=false", "-Dtest={0!s}".format(ns)])
 pipe.wait()
 
 os.chdir("..")

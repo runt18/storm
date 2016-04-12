@@ -71,7 +71,7 @@ class JiraReport(Report):
         return -1, 43, -1, -1
 
     def print_report(self):
-        print "%s (Count = %s) " % (self.header, len(self.issues))
+        print "{0!s} (Count = {1!s}) ".format(self.header, len(self.issues))
         jiras = self.values_view()
         fields_tuple = ('Jira Id', 'Summary', 'Created', 'Last Updated (Days)')
         row_tuple = self._row_tuple(jiras[0])
@@ -110,7 +110,7 @@ class GitHubReport(Report):
         return -1, 43, -1, -1, -1
 
     def print_report(self):
-        print "%s (Count = %s) " % (self.header, len(self.pull_requests))
+        print "{0!s} (Count = {1!s}) ".format(self.header, len(self.pull_requests))
 
         fields_tuple = self._build_tuple(('URL', 'Title', 'Created', 'Last Updated (Days)', 'User'), '')
         if len(self.pull_requests) > 0:
@@ -188,7 +188,7 @@ class JiraGitHubCombinedReport(Report):
 
     # variables and method names ending with _1 correspond to the comments part
     def print_report(self, print_comments=False):
-        print "%s (Count = %s) " % (self.header, len(self.github_report.pull_requests))
+        print "{0!s} (Count = {1!s}) ".format(self.header, len(self.github_report.pull_requests))
 
         fields_tuple = ('JIRA ID', 'Pull Request', 'Jira Summary', 'JIRA Age',
                         'Pull Age', 'JIRA Update Age', 'Pull Update Age (Days)',

@@ -342,9 +342,9 @@ class JavaObjectArg:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -433,9 +433,9 @@ class JavaObject:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -479,9 +479,9 @@ class NullStruct:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -561,9 +561,9 @@ class GlobalStreamId:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -731,9 +731,9 @@ class Grouping:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -821,9 +821,9 @@ class StreamInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -899,9 +899,9 @@ class ShellComponent:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -992,9 +992,9 @@ class ComponentObject:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1123,9 +1123,9 @@ class ComponentCommon:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1207,9 +1207,9 @@ class SpoutSpec:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1291,9 +1291,9 @@ class Bolt:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1375,9 +1375,9 @@ class StateSpoutSpec:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1526,9 +1526,9 @@ class StormTopology:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1596,9 +1596,9 @@ class AlreadyAliveException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1666,9 +1666,9 @@ class NotAliveException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1736,9 +1736,9 @@ class AuthorizationException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1806,9 +1806,9 @@ class InvalidTopologyException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1876,9 +1876,9 @@ class KeyNotFoundException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -1946,9 +1946,9 @@ class KeyAlreadyExistsException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -2730,9 +2730,9 @@ class TopologySummary:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -2919,9 +2919,9 @@ class SupervisorSummary:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3046,9 +3046,9 @@ class NimbusSummary:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3183,9 +3183,9 @@ class ClusterSummary:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3291,9 +3291,9 @@ class ErrorInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3523,9 +3523,9 @@ class BoltStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3680,9 +3680,9 @@ class SpoutStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3760,9 +3760,9 @@ class ExecutorSpecificStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3913,9 +3913,9 @@ class ExecutorStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3995,9 +3995,9 @@ class ExecutorInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4138,9 +4138,9 @@ class ExecutorSummary:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4216,9 +4216,9 @@ class DebugOptions:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5037,9 +5037,9 @@ class TopologyInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5167,9 +5167,9 @@ class CommonAggregateStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5232,9 +5232,9 @@ class SpoutAggregateStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5336,9 +5336,9 @@ class BoltAggregateStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5416,9 +5416,9 @@ class SpecificAggregateStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5523,9 +5523,9 @@ class ComponentAggregateStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5690,9 +5690,9 @@ class TopologyStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6546,9 +6546,9 @@ class TopologyPageInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6626,9 +6626,9 @@ class ExecutorAggregateStats:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6930,9 +6930,9 @@ class ComponentPageInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6995,9 +6995,9 @@ class KillOptions:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7096,9 +7096,9 @@ class RebalanceOptions:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7173,9 +7173,9 @@ class Credentials:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7254,9 +7254,9 @@ class SubmitOptions:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7349,9 +7349,9 @@ class AccessControl:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7438,9 +7438,9 @@ class SettableBlobMeta:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7521,9 +7521,9 @@ class ReadableBlobMeta:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7611,9 +7611,9 @@ class ListBlobsResult:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7706,9 +7706,9 @@ class BeginDownloadResult:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7915,9 +7915,9 @@ class SupervisorInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8005,9 +8005,9 @@ class NodeInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8096,9 +8096,9 @@ class WorkerResources:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8290,9 +8290,9 @@ class Assignment:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8370,9 +8370,9 @@ class TopologyActionOptions:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8567,9 +8567,9 @@ class StormBase:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8691,9 +8691,9 @@ class ClusterWorkerHeartbeat:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8773,9 +8773,9 @@ class ThriftSerializedObject:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8851,9 +8851,9 @@ class LocalStateData:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8956,9 +8956,9 @@ class LocalAssignment:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9023,9 +9023,9 @@ class LSSupervisorId:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9100,9 +9100,9 @@ class LSApprovedWorkers:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9178,9 +9178,9 @@ class LSSupervisorAssignments:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9299,9 +9299,9 @@ class LSWorkerHeartbeat:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9427,9 +9427,9 @@ class LSTopoHistory:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9503,9 +9503,9 @@ class LSTopoHistoryList:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9599,9 +9599,9 @@ class ProfileRequest:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9664,9 +9664,9 @@ class GetInfoOptions:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9783,9 +9783,9 @@ class LogLevel:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9860,9 +9860,9 @@ class LogConfig:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9933,9 +9933,9 @@ class TopologyHistoryInfo:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10015,9 +10015,9 @@ class DRPCRequest:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10085,9 +10085,9 @@ class DRPCExecutionException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10219,9 +10219,9 @@ class HBMessageData:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10311,9 +10311,9 @@ class HBMessage:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10381,9 +10381,9 @@ class HBAuthorizationException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10451,9 +10451,9 @@ class HBExecutionException(TException):
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10531,9 +10531,9 @@ class HBPulse:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10605,9 +10605,9 @@ class HBRecords:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -10678,9 +10678,9 @@ class HBNodes:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__

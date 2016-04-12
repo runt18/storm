@@ -1861,7 +1861,7 @@ class Processor(Iface, TProcessor):
     if name not in self._processMap:
       iprot.skip(TType.STRUCT)
       iprot.readMessageEnd()
-      x = TApplicationException(TApplicationException.UNKNOWN_METHOD, 'Unknown function %s' % (name))
+      x = TApplicationException(TApplicationException.UNKNOWN_METHOD, 'Unknown function {0!s}'.format((name)))
       oprot.writeMessageBegin(name, TMessageType.EXCEPTION, seqid)
       x.write(oprot)
       oprot.writeMessageEnd()
@@ -2959,9 +2959,9 @@ class submitTopology_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3053,9 +3053,9 @@ class submitTopology_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3172,9 +3172,9 @@ class submitTopologyWithOpts_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3266,9 +3266,9 @@ class submitTopologyWithOpts_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3331,9 +3331,9 @@ class killTopology_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3411,9 +3411,9 @@ class killTopology_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3490,9 +3490,9 @@ class killTopologyWithOpts_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3570,9 +3570,9 @@ class killTopologyWithOpts_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3635,9 +3635,9 @@ class activate_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3715,9 +3715,9 @@ class activate_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3780,9 +3780,9 @@ class deactivate_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3860,9 +3860,9 @@ class deactivate_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -3939,9 +3939,9 @@ class rebalance_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4033,9 +4033,9 @@ class rebalance_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4112,9 +4112,9 @@ class setLogConfig_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4158,9 +4158,9 @@ class setLogConfig_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4223,9 +4223,9 @@ class getLogConfig_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4288,9 +4288,9 @@ class getLogConfig_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4392,9 +4392,9 @@ class debug_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4472,9 +4472,9 @@ class debug_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4551,9 +4551,9 @@ class setWorkerProfiler_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4597,9 +4597,9 @@ class setWorkerProfiler_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4688,9 +4688,9 @@ class getComponentPendingProfileActions_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4761,9 +4761,9 @@ class getComponentPendingProfileActions_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4840,9 +4840,9 @@ class uploadNewCredentials_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -4934,9 +4934,9 @@ class uploadNewCredentials_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5013,9 +5013,9 @@ class beginCreateBlob_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5105,9 +5105,9 @@ class beginCreateBlob_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5170,9 +5170,9 @@ class beginUpdateBlob_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5262,9 +5262,9 @@ class beginUpdateBlob_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5340,9 +5340,9 @@ class uploadBlobChunk_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5406,9 +5406,9 @@ class uploadBlobChunk_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5471,9 +5471,9 @@ class finishBlobUpload_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5537,9 +5537,9 @@ class finishBlobUpload_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5602,9 +5602,9 @@ class cancelBlobUpload_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5668,9 +5668,9 @@ class cancelBlobUpload_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5733,9 +5733,9 @@ class getBlobMeta_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5826,9 +5826,9 @@ class getBlobMeta_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5905,9 +5905,9 @@ class setBlobMeta_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -5985,9 +5985,9 @@ class setBlobMeta_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6050,9 +6050,9 @@ class beginBlobDownload_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6143,9 +6143,9 @@ class beginBlobDownload_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6208,9 +6208,9 @@ class downloadBlobChunk_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6286,9 +6286,9 @@ class downloadBlobChunk_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6351,9 +6351,9 @@ class deleteBlob_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6431,9 +6431,9 @@ class deleteBlob_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6496,9 +6496,9 @@ class listBlobs_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6561,9 +6561,9 @@ class listBlobs_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6626,9 +6626,9 @@ class getBlobReplication_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6718,9 +6718,9 @@ class getBlobReplication_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6796,9 +6796,9 @@ class updateBlobReplication_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6888,9 +6888,9 @@ class updateBlobReplication_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6953,9 +6953,9 @@ class createStateInZookeeper_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -6999,9 +6999,9 @@ class createStateInZookeeper_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7045,9 +7045,9 @@ class beginFileUpload_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7123,9 +7123,9 @@ class beginFileUpload_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7201,9 +7201,9 @@ class uploadChunk_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7267,9 +7267,9 @@ class uploadChunk_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7332,9 +7332,9 @@ class finishFileUpload_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7398,9 +7398,9 @@ class finishFileUpload_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7463,9 +7463,9 @@ class beginFileDownload_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7541,9 +7541,9 @@ class beginFileDownload_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7606,9 +7606,9 @@ class downloadChunk_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7684,9 +7684,9 @@ class downloadChunk_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7730,9 +7730,9 @@ class getNimbusConf_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7808,9 +7808,9 @@ class getNimbusConf_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7854,9 +7854,9 @@ class getClusterInfo_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7933,9 +7933,9 @@ class getClusterInfo_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -7998,9 +7998,9 @@ class getTopologyInfo_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8091,9 +8091,9 @@ class getTopologyInfo_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8170,9 +8170,9 @@ class getTopologyInfoWithOpts_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8263,9 +8263,9 @@ class getTopologyInfoWithOpts_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8354,9 +8354,9 @@ class getTopologyPageInfo_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8447,9 +8447,9 @@ class getTopologyPageInfo_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8551,9 +8551,9 @@ class getComponentPageInfo_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8644,9 +8644,9 @@ class getComponentPageInfo_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8709,9 +8709,9 @@ class getTopologyConf_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8801,9 +8801,9 @@ class getTopologyConf_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8866,9 +8866,9 @@ class getTopology_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -8959,9 +8959,9 @@ class getTopology_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9024,9 +9024,9 @@ class getUserTopology_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9117,9 +9117,9 @@ class getUserTopology_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9182,9 +9182,9 @@ class getTopologyHistory_args:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
@@ -9261,9 +9261,9 @@ class getTopologyHistory_result:
     return value
 
   def __repr__(self):
-    L = ['%s=%r' % (key, value)
+    L = ['{0!s}={1!r}'.format(key, value)
       for key, value in self.__dict__.iteritems()]
-    return '%s(%s)' % (self.__class__.__name__, ', '.join(L))
+    return '{0!s}({1!s})'.format(self.__class__.__name__, ', '.join(L))
 
   def __eq__(self, other):
     return isinstance(other, self.__class__) and self.__dict__ == other.__dict__
