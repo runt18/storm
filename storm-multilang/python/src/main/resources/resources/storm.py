@@ -102,7 +102,9 @@ def __emit(*args, **kwargs):
     elif MODE == Spout:
         emitSpout(*args, **kwargs)
 
-def emitBolt(tup, stream=None, anchors = [], directTask=None):
+def emitBolt(tup, stream=None, anchors = None, directTask=None):
+    if anchors is None:
+        anchors = []
     global ANCHOR_TUPLE
     if ANCHOR_TUPLE is not None:
         anchors = [ANCHOR_TUPLE]
